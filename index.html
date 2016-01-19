@@ -26,7 +26,10 @@
           right: -webkit-calc(50% - 125px);
           padding: 30px 25px 25px;
           border-radius: 10px;
-          opacity: .77;
+        }
+        .profile-img {
+          width: 200px;
+          border-radius: 50%;
         }
         .projects {
           width: 85%;
@@ -63,12 +66,23 @@
         .project-img {
           width: 400px;
         }
+        .tech-icons {
+          float: right;
+        }
+        .tech-icons > img {
+          width: 150px;
+        }
+        .tech-icons2 > img {
+          width: 75px;
+        }
       </style>
     </head>
     <body>
         <div class = "container">
             <div class="header-content">
               <h2 style="text-align: center">SHERI ZADA</h2>
+              <h4>Software Engineer / Web Developer</h4>
+              <img src="./assets/site-profile-ph.jpg" class="profile-img" />
               <div>
                 <ul>
                   <li style="list-style: none"><a href = "https://www.github.com/sherzader" target = "_blank">Github</a></li>
@@ -77,6 +91,15 @@
                   <li style="list-style: none"><a href = "https://www.facebook.com/shadarezada" target = "_blank">Facebook</a></li>
                 </ul>
                 <p style="text-transform: lowercase">sheri.h.zada@gmail.com</p>
+              </div>
+              <h2 style="text-align: center">Skillset</h2>
+              <div class="tech-icons">
+                <img src="./assets/tech_icons.png" />
+                <img src="./assets/tech_icons2.png" />
+              </div>
+              <div class="tech-icons2">
+                <img src="./assets/tech_icons3.png" />
+                <img src="./assets/tech_icons4.png" />
               </div>
             </div>
             <div class="projects">
@@ -87,8 +110,9 @@
                   <a href = "https://www.github.com/sherzader/entente" target = "_blank">Code</a>
                   <div class="project-caption" style="text-transform: lowercase">
                     <ul>
+                      <li>Full stack web app built on Ruby on Rails, React.js/Flux, JQuery, Javascript, Html5, CSS3</li>
                       <li>BCrypt User Authentication to salt and hash passwords for secure database storage</li>
-                      <li>CRUD functionality for groups and their nested resources, events</li>
+                      <li>CRUD functionality for groups as well as their nested resources, events</li>
                       <li>Joins two schemas to enable users to join/leave a group</li>
                       <li>Rails backend reduces N+1 PostgreSQL queries to improve time performance of AJAX requests</li>
                       <li>Sensitive search and Calendar component to filter groups by nested event association’s date</li>
@@ -116,11 +140,10 @@
                   <a href = "http://sherizada.com/SecretSnowman" target = "_blank">Code</a>
                   <div class="project-caption-3" style="text-transform: lowercase">
                     <ul>
-                      <li>Secret Snowman(Santa) app for my App Academy cohort to celebrate the holidays. ~ 40 users!</li>
+                      <li>Secret Snowman(Santa) app for my App Academy cohort to celebrate the holidays. ~ 50 users!</li>
                       <li>Collaborated with a couple of friends to build out this fun idea</li>
                       <li>Rails app with HTML/CSS styling</li>
                       <li>Backend validation for allowing current users to only view their own secret snowman match</li>
-                      <li>Inner join table to create secret snowman matches</li>
                       <li>BCrypt User Authentication to salt and hash passwords for secure database storage</li>
                       <li>User wish-lists(created with default values in backend) can be edited and viewed by all once logged in</li>
                     </ul>
