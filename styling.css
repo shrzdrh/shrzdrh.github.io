@@ -40,20 +40,32 @@ body {
 .project-caption-2 {
   position: absolute;
   width: 500px;
-  top: 400px;
+  top: 430px;
   margin: 0 0 0 400px;
 }
 .project-caption-3 {
   position: absolute;
   width: 500px;
-  top: 700px;
+  top: 750px;
+  margin: 0 0 0 400px;
+}
+.project-caption-4 {
+  position: absolute;
+  width: 500px;
+  top: 1050px;
   margin: 0 0 0 400px;
 }
 a {
   text-decoration: none;
 }
+
+a:visited {
+  text-decoration: none;
+}
+
 .project-img {
   width: 400px;
+  max-height: 260px;
 }
 .tech-icons {
   float: right;
@@ -63,4 +75,8 @@ a {
 }
 .tech-icons2 > img {
   width: 75px;
+}
+
+li {
+  list-style: none;
 }
