@@ -15,7 +15,7 @@
             <div class="header-content">
               <h2 style="text-align: center">SHERI ZADA</h2>
               <h4>Software Engineer / Web Developer</h4>
-              <img src="./assets/site-profile-ph.jpg" class="profile-img" />
+              <img src="./assets/self-portrait.jpg" class="profile-img" />
               <div>
                 <ul>
                   <li style="list-style: none"><a href = "https://www.github.com/sherzader" target = "_blank">Github</a></li>
@@ -38,37 +38,34 @@
               </div>
             </div>
             <div class="projects">
-              <h2 style="padding-left: 20px">Project Highlights</h2>
-              <div class="project-content">
-                  <img src="./assets/gameoflife-grab.png" class="project-img" />
-                  <a href = "https://www.github.com/sherzader/GameOfLife" target = "_blank">Code</a>
-                  <div class="project-caption" style="text-transform: lowercase">
-                    <ul>
-                      <li>&#x25BA; Classic cellular automaton simulation by John Conway</li>
-                      <li>&#x25BA; Game written in Java</li>
-                    </ul>
-                  </div>
-              </div>
-              <div class="project-content">
+              <h2>Project Highlights</h2>
+              <div class="project-index">
+                <div class="project-content">
                   <img src="./assets/entente-grab.png" class="project-img" />
-                  <a href = "http://entente.io" target = "_blank">Live</a>
-                  <a href = "https://www.github.com/sherzader/entente" target = "_blank">Code</a>
-                  <div class="project-caption-2" style="text-transform: lowercase">
+                  <div className="project-header">
+                    <div class="title">Entente</div>
+                    <a href = "http://entente.io" target = "_blank">Live | </a>
+                    <a href = "https://www.github.com/sherzader/entente" target = "_blank">Code</a>
+                  </div>
+                  <div class="project-caption" style="text-transform: lowercase">
                     <ul>
                       <li>&#x25BA; Full stack web app built on Ruby on Rails, React.js/Flux, JQuery, Javascript, Html5, CSS3</li>
                       <li>&#x25BA; BCrypt User Authentication to salt and hash passwords for secure database storage</li>
-                      <li>&#x25BA; CRUD functionality for groups as well as their nested resources, events</li>
-                      <li>&#x25BA; Joins two schemas to enable users to join/leave a group</li>
                       <li>&#x25BA; Rails backend reduces N+1 PostgreSQL queries to improve time performance of AJAX requests</li>
-                      <li>&#x25BA; Sensitive search and Calendar component to filter groups by nested event association’s date</li>
+                      <li>&#x25BA; CRUD functionality for groups and nested resource events</li>
+                      <li>&#x25BA; Joins two schemas to enable users toggle group membership</li>
+                      <li>&#x25BA; Responsive UI design</li>
                     </ul>
                   </div>
               </div>
               <div class="project-content">
-                  <img src="./assets/ski-free-grab.png" class="project-img" />
-                  <a href = "http://sherizada.com/ski-free" target = "_blank">Live</a>
+                <img src="./assets/ski-free-grab.png" class="project-img" />
+                <div className="project-header">
+                  <div class="title">Ski Free</div>
+                  <a href = "http://sherizada.com/ski-free" target = "_blank">Live | </a>
                   <a href = "https://www.github.com/sherzader/ski-free" target = "_blank">Code</a>
-                  <div class="project-caption-3" style="text-transform: lowercase">
+                </div>
+                  <div class="project-caption" style="text-transform: lowercase">
                     <ul>
                       <li>&#x25BA; Classic 1991 Microsoft game built in JavaScript and Canvas</li>
                       <li>&#x25BA; Game begins upon triggering of keydown handler</li>
@@ -80,21 +77,55 @@
                   </div>
               </div>
               <div class="project-content">
-                  <img src="./assets/secretsnowman-grab.png" class="project-img" />
-                  <a href = "http://secret-snowman.herokuapp.com/signup" target = "_blank">Live</a>
-                  <a href = "http://sherizada.com/SecretSnowman" target = "_blank">Code</a>
-                  <div class="project-caption-4" style="text-transform: lowercase">
+                <img src="./assets/instapixies-grab.png" class="project-img" />
+                <div className="project-header">
+                  <div class="title">Instapixies</div>
+                  <a href = "http://instapixies.herokuapp.com/" target = "_blank">Live | </a>
+                  <a href = "http://sherizada.com/instapixies" target = "_blank">Code</a>
+                </div>
+                <div class="project-caption" style="text-transform: lowercase">
+                  <ul>
+                    <li>&#x25BA; Access Instagram pictures and videos</li>
+                    <li>&#x25BA; Query by time period and hashtag</li>
+                    <li>&#x25BA; All Instagram API calls occur in backend</li>
+                    <li>&#x25BA; Security measures taken for API access key</li>
+                    <li>&#x25BA; Pagination to see older photos matching query</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="project-content">
+                <img src="./assets/gameoflife-grab.png" class="project-img" />
+                  <div className="project-header">
+                    <div class="title">Game of Life</div>
+                    <a href = "https://www.github.com/sherzader/GameOfLife" target = "_blank">Code</a>
+                  </div>
+                  <div class="project-caption" style="text-transform: lowercase">
                     <ul>
-                      <li>&#x25BA;  Secret Snowman(Santa) app for my App Academy cohort to celebrate the holidays. ~ 50 users!</li>
-                      <li>&#x25BA; Collaborated with a couple of friends to build out this fun idea</li>
-                      <li>&#x25BA; Exercised git version control as team worked on different branches</li>
-                      <li>&#x25BA; Backend validation allows current users to only view their own secret snowman match</li>
-                      <li>&#x25BA; BCrypt User Authentication to salt and hash passwords for secure database storage</li>
-                      <li>&#x25BA; User wish-lists(created with default values in backend) can be edited and viewed by all once logged in</li>
+                      <li>&#x25BA; Classic cellular automaton simulation by John Conway</li>
+                      <li>&#x25BA; Game written in Java</li>
                     </ul>
                   </div>
               </div>
+              <div class="project-content">
+                <img src="./assets/secretsnowman-grab.png" class="project-img" />
+                <div className="project-header">
+                  <div class="title">Secret Snowman</div>
+                  <a href = "http://secret-snowman.herokuapp.com/signup" target = "_blank">Live | </a>
+                  <a href = "http://sherizada.com/SecretSnowman" target = "_blank">Code</a>
+                </div>
+                <div class="project-caption" style="text-transform: lowercase">
+                  <ul>
+                    <li>&#x25BA; Secret Snowman(Santa) app for my App Academy cohort to celebrate the holidays. ~ 50 users!</li>
+                    <li>&#x25BA; Collaborated with a couple of friends to build out this fun idea</li>
+                    <li>&#x25BA; Exercised git version control as team worked on different branches</li>
+                    <li>&#x25BA; Backend validation allows current users to only view their own secret snowman match</li>
+                    <li>&#x25BA; BCrypt User Authentication to salt and hash passwords for secure database storage</li>
+                    <li>&#x25BA; User wish-lists(created with default values in backend) can be edited and viewed by all once logged in</li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
     </body>
 </html>
