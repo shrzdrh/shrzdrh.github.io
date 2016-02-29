@@ -32,6 +32,7 @@ body {
 
 .project-index {
   margin-bottom: 40px;
+  max-width: 900px;
 }
 
 .project-content {
