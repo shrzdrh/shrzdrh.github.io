@@ -1,4 +1,5 @@
 window.AboutMe = React.createClass({
+  
   render: function()  {
     var componentStyles = "about-me";
     componentStyles += this.props.show ? " show-about" : " hide-about";
@@ -12,6 +13,7 @@ window.AboutMe = React.createClass({
         writing my first programs, I realized I wanted to make a life out of
         architecting solutions and optimizations for society through software.<br/>
         Here's what I've done professionally >> [resume].
+        <img src="./images/mt_tam.jpg" />
       </div>
     );
   }

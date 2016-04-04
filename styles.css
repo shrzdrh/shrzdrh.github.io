@@ -2,23 +2,25 @@ body {
   overflow: hidden;
 }
 
+img {
+  margin-left: 60px;
+}
+
 .react-wrapper {
   margin: 0 auto;
   position: relative;
   top: 100px;
-  right: -250px;
-  height: 335px;
+  left: 150px;
+  height: 500px;
   overflow: hidden;
 }
 
 #name {
-  position:fixed !important;
-  position: absolute;
+  position: fixed !important;
   top:0;
-  z-index: 999;
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 30px;
-  left: 250px;
+  left: 150px;
   padding: 30px;
   padding-top: 0px;
   width: 419px;
@@ -32,7 +34,7 @@ body {
   position: relative;
   font: 24px 'Indie Flower', cursive;
   background-color: oldlace;
-  width: 439px;
+  width: 639px;
   height: 45px;
   padding-top: 10px;
   border-top: 20px solid papayawhip;
@@ -60,9 +62,10 @@ a:active { background: lavender; }
   font-family: 'Indie Flower', cursive;
   font-size: 16px;
   background-color: papayawhip;
-  width: 439px;
-  height: 200px;
+  width: 639px;
+  height: 400px;
   padding: 20px;
+  overflow-y: scroll;
 }
 
 .show-about {
@@ -71,18 +74,18 @@ a:active { background: lavender; }
 }
 
 .hide-about {
-  top: -240px;
+  top: -440px;
   animation: 2s ease-in slideout;
 }
 
 @keyframes slidein {
-  from { top: -240px }
+  from { top: -440px }
   to { top: 0px }
 }
 
 @keyframes slideout {
   from { top: 0px }
-  to { top: -240px }
+  to { top: -440px }
 }
 
 .blog {
@@ -91,19 +94,24 @@ a:active { background: lavender; }
   font-family: 'Indie Flower', cursive;
   font-size: 16px;
   background-color: papayawhip;
-  width: 439px;
-  height: 200px;
-  padding: 20px;
+  width: 649px;
+  height: 370px;
+  padding: 15px;
   overflow-y: scroll;
 }
 
 .question {
+  line-height: 40px;
+  padding: 5px;
+  letter-spacing: 2px;
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 16px;
+  color: purple;
+  border: 3px dotted plum;
 }
 
 .show-blog {
-  top: -240px;
+  top: -440px;
   animation: 2s ease-in slideBlogin;
 }
 
@@ -115,10 +123,10 @@ a:active { background: lavender; }
 
 @keyframes slideBlogin {
   from { top: 0px }
-  to { top: -240px }
+  to { top: -440px }
 }
 
 @keyframes slideBlogout {
-  from { top: -240px }
+  from { top: -440px }
   to { top: 0px }
 }

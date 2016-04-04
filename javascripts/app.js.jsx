@@ -17,7 +17,7 @@ window.App = React.createClass({
 
     return(
       <div className="react-wrapper">
-        <Menu handleClick={this.handleClick} />
+        <Navbar handleClick={this.handleClick} />
         <AboutMe show={this.state.ShowAboutMe} handleClick={this.handleClick} />
         <Blog show={this.state.ShowBlog} handleClick={this.handleClick} />
       </div>

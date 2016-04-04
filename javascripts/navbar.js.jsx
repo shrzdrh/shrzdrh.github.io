@@ -1,4 +1,4 @@
-window.Menu = React.createClass({
+window.Navbar = React.createClass({
   render: function() {
     return (
       <div className="nav-bar" onClick={this.props.handleClick}>
