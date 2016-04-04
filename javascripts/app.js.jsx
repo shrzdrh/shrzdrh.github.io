@@ -5,10 +5,6 @@ window.App = React.createClass({
   handleClick: function(e) {
     var showComponent = e.currentTarget.getAttribute('value');
 
-    for (item in this.state) {
-      this.state[item] = false;
-    }
-
     if (this.state[showComponent]) {
       this.state[showComponent] = true;
     }

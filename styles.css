@@ -1,37 +1,47 @@
-#main {
-}
 
-#react-wrapper {
+.react-wrapper {
+  z-index: 999;
+  height: 280px;
+  margin: 100px 150px;
 }
 
 .nav-bar {
+  z-index: 999;
   font: 24px 'Indie Flower', cursive;
-  display: block;
   float: left;
-  background-color: papayawhip;
-  padding: 20px;
-  width: 100px;
+  background-color: oldlace;
+  width: 120px;
   height: 200px;
-  border-top: 20px solid blanchedalmond;
+  padding-top: 10px;
+  margin-right: 30px;
+  border-top: 20px solid papayawhip;
   border-right: 20px solid bisque;
-  border-bottom: 20px solid blanchedalmond;
+  border-bottom: 20px solid papayawhip;
   border-left: 20px solid bisque;
-  border-radius: 0px 15px 15px 0px;
-  box-shadow: 1px 1px 10px #888888;
+  border-radius: 0px;
+  text-align: center;
 }
 
 a {
   text-decoration: none;
   color: black;
+  padding: 10px 14px;
 }
 
 a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  background: lavender;
+}
+
 .about-me {
+  position: relative;
   font-family: 'Handlee', cursive;
-  left: 40px;
+  width: 400px;
+  height: 200px;
+  padding-top: 40px;
   -webkit-transition: left 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
   -moz-transition: left 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
   -o-transition: left 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
@@ -40,8 +50,10 @@ a:visited {
 
 .show-about {
   right: 300px;
+  display: block;
 }
 
 .hide-about {
   left: -300px;
+  display: none;
 }
