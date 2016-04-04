@@ -1,13 +1,10 @@
 window.Menu = React.createClass({
-  render: () => {
-
+  render: function() {
     return (
-      <div className="menu">
-        <a value="ShowAboutMe" onClick={this.props.handleClick}>About Me</a>
-        <a value="ShowProjects" onClick={this.props.handleClick}>Projects</a>
-        <a value="ShowEntente" onClick={this.props.handleClick}>Entente</a>
+      <div className="nav-bar">
+        <a href="#" value='ShowAboutMe' onClick={this.props.handleClick}>About Me</a>
       </div>
     );
   }
-  
+
 });

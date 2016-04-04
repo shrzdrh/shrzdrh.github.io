@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <title>Sheri's &#x1f30e;</title>
     <link rel="shortcut icon" href="http://i876.photobucket.com/albums/ab321/zada1591/favicon_16x16_zpsrnoo9ny3.png">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styles.css">
     <script src="build/react.js"></script>
     <script src="build/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script type="text/babel" src="javascripts/about_me.js.jsx"></script>
+    <script type="text/babel" src="./javascripts/app.js.jsx"></script>
+    <script type="text/babel" src="./javascripts/about_me.js.jsx"></script>
+    <script type="text/babel" src="./javascripts/menu.js.jsx"></script>
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Handlee' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div id="main"></div>
+
     <script type="text/babel">
       ReactDOM.render(
-        <AboutMe/>,
+        <App />,
         document.getElementById('main')
       );
     </script>

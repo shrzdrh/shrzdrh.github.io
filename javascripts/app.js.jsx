@@ -1,23 +1,27 @@
 window.App = React.createClass({
-  getInitialState: () => {
+  getInitialState: function() {
     return ({ ShowAboutMe: false, ShowProjects: false, ShowEntente: false });
   },
-  handleClick: () => {
+  handleClick: function(e) {
     var showComponent = e.currentTarget.getAttribute('value');
 
+    for (item in this.state) {
+      this.state[item] = false;
+    }
+
     if (this.state[showComponent]) {
-      this.state[showComponent] = false;
-    } else {
       this.state[showComponent] = true;
     }
 
     this.forceUpdate();
   },
-  render: () => {
+  render: function()  {
 
     return(
-      <Menu onClick={this.handleClick} />
-      <AboutMe show={this.state.ShowAboutMe} />
+      <div className="react-wrapper">
+        <Menu handleClick={this.handleClick} />
+        <AboutMe show={this.state.ShowAboutMe} handleClick={this.handleClick} />
+      </div>
     );
 
   }

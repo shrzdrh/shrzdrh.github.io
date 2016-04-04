@@ -1,0 +1,47 @@
+#main {
+}
+
+#react-wrapper {
+}
+
+.nav-bar {
+  font: 24px 'Indie Flower', cursive;
+  display: block;
+  float: left;
+  background-color: papayawhip;
+  padding: 20px;
+  width: 100px;
+  height: 200px;
+  border-top: 20px solid blanchedalmond;
+  border-right: 20px solid bisque;
+  border-bottom: 20px solid blanchedalmond;
+  border-left: 20px solid bisque;
+  border-radius: 0px 15px 15px 0px;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.about-me {
+  font-family: 'Handlee', cursive;
+  left: 40px;
+  -webkit-transition: left 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
+  -moz-transition: left 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
+  -o-transition: left 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
+  transition: left 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
+}
+
+.show-about {
+  right: 300px;
+}
+
+.hide-about {
+  left: -300px;
+}
