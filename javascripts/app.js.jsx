@@ -3,9 +3,11 @@ window.App = React.createClass({
     return ({ ShowAboutMe: false, ShowProjects: false, ShowEntente: false });
   },
   handleClick: function(e) {
-    var showComponent = e.currentTarget.getAttribute('value');
+    var showComponent = e.currentTarget.getAttribute("value");
 
     if (this.state[showComponent]) {
+      this.state[showComponent] = false;
+    } else {
       this.state[showComponent] = true;
     }
 
