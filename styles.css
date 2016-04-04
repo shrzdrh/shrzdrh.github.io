@@ -1,13 +1,14 @@
 body {
-/*   background-color: pink; */
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .react-wrapper {
-  height: 280px;
   margin: 0 auto;
   position: relative;
   top: 100px;
   right: -250px;
+  height: 335px;
+  overflow: hidden;
 }
 
 #name {
@@ -20,7 +21,7 @@ body {
   left: 250px;
   padding: 30px;
   padding-top: 0px;
-  width: 439px;
+  width: 419px;
   height: 150px;
   line-height: 190px;
   background-color: white;
@@ -91,7 +92,7 @@ a:active { background: lavender;}
   z-index: 5px;
   font-family: 'Indie Flower', cursive;
   font-size: 16px;
-  background-color: lavender;
+  background-color: papayawhip;
   width: 439px;
   height: 200px;
   padding: 20px;
@@ -103,17 +104,17 @@ a:active { background: lavender;}
 }
 
 .hide-blog {
-  top: 240px;
+  top: 0px;
   animation: 2s ease-in slideBlogout;
 }
 
 
 @keyframes slideBlogin {
-  from { top: 240px }
+  from { top: 0px }
   to { top: -240px }
 }
 
 @keyframes slideBlogout {
   from { top: -240px }
-  to { top: 240px }
+  to { top: 0px }
 }

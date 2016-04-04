@@ -3,7 +3,7 @@ window.App = React.createClass({
     return ({ ShowAboutMe: false, ShowProjects: false, ShowEntente: false, ShowBlog: false });
   },
   handleClick: function(e) {
-    var showComponent = e.currentTarget.getAttribute("value");
+    var showComponent = e.target.getAttribute("value");
 
     for (var state in this.state) {
       this.state[state] = false;
