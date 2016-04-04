@@ -1,35 +1,43 @@
-
+body {
+/*   background-color: pink; */
+}
 .react-wrapper {
   height: 280px;
   margin: 0 auto;
   position: relative;
   top: 100px;
-  right: -150px;
+  right: -250px;
 }
 
 #name {
+  position:fixed !important;
+  top:0;
+  z-index: 999;
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 30px;
-  position: absolute;
-  top: 70px;
-  left: 160px;
+  left: 250px;
+  padding: 30px;
+  padding-top: 0px;
+  width: 439px;
+  height: 150px;
+  line-height: 190px;
+  background-color: white;
 }
 
 .nav-bar {
+  z-index: 999;
+  position: relative;
   font: 24px 'Indie Flower', cursive;
   background-color: oldlace;
-  width: 334px;
+  width: 439px;
   height: 45px;
   padding-top: 10px;
-  margin-right: 30px;
   border-top: 20px solid papayawhip;
   border-right: 20px solid bisque;
   border-bottom: 20px solid papayawhip;
   border-left: 20px solid bisque;
   border-radius: 0px;
   text-align: center;
-  -moz-transition: all .3s ease-in-out;
-
 }
 
 a {
@@ -46,26 +54,33 @@ a:hover {
 a:active { background: lavender;}
 
 .about-me {
+  z-index: 5px;
   font-family: 'Indie Flower', cursive;
   font-size: 16px;
-  top: 0px;
+  position: relative;
+  z-index: 5px;
   background-color: papayawhip;
-  width: 334px;
-  height: 260px;
+  width: 439px;
+  height: 200px;
   padding: 20px;
-  -moz-transition: all .3s ease-out;
-
 }
 
 .show-about {
   top: 0px;
-  display: block;
-  -moz-transition: all .5s ease-out;
-
+  animation: 2s ease-in slidein;
 }
 
 .hide-about {
-  display: none;
-  -moz-transition: all .5s ease-out;
+  top: -240px;
+  animation: 2s ease-in slideout;
+}
 
+@keyframes slidein {
+  from { top: -240px }
+  to { top: 0px }
+}
+
+@keyframes slideout {
+  from { top: 0px }
+  to { top: -240px }
 }
