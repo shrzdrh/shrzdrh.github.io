@@ -1,5 +1,12 @@
 window.AboutMe = React.createClass({
   render: () => {
-    return (<div>Hi, My Name is Sheri.</div>);
+    var componentStyles = "about-me";
+    componentStyles += this.props.show ? " show-about" : " hide-about";
+
+    return (
+      <div className={componentStyles}>
+
+      </div>
+    );
   }
 });
