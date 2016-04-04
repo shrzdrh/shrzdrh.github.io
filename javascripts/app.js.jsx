@@ -1,15 +1,15 @@
 window.App = React.createClass({
   getInitialState: function() {
-    return ({ ShowAboutMe: false, ShowProjects: false, ShowEntente: false });
+    return ({ ShowAboutMe: false, ShowProjects: false, ShowEntente: false, ShowBlog: false });
   },
   handleClick: function(e) {
     var showComponent = e.currentTarget.getAttribute("value");
 
-    if (this.state[showComponent]) {
-      this.state[showComponent] = false;
-    } else {
-      this.state[showComponent] = true;
+    for (var state in this.state) {
+      this.state[state] = false;
     }
+
+    this.state[showComponent] = true;
 
     this.forceUpdate();
   },
@@ -19,6 +19,7 @@ window.App = React.createClass({
       <div className="react-wrapper">
         <Menu handleClick={this.handleClick} />
         <AboutMe show={this.state.ShowAboutMe} handleClick={this.handleClick} />
+        <Blog show={this.state.ShowBlog} handleClick={this.handleClick} />
       </div>
     );
 

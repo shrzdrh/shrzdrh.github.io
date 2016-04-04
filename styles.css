@@ -1,5 +1,6 @@
 body {
 /*   background-color: pink; */
+    overflow: hidden;
 }
 .react-wrapper {
   height: 280px;
@@ -11,6 +12,7 @@ body {
 
 #name {
   position:fixed !important;
+  position: absolute;
   top:0;
   z-index: 999;
   font-family: 'Shadows Into Light', sans-serif;
@@ -44,7 +46,7 @@ a {
   text-decoration: none;
   color: black;
   padding: 10px 14px;
-  -moz-transition: all .5s ease-out;
+  transition: all .5s ease-out;
 }
 /*a:visited { text-decoration: none;}*/
 a:hover {
@@ -54,11 +56,10 @@ a:hover {
 a:active { background: lavender;}
 
 .about-me {
+  position: inherit;
   z-index: 5px;
   font-family: 'Indie Flower', cursive;
   font-size: 16px;
-  position: relative;
-  z-index: 5px;
   background-color: papayawhip;
   width: 439px;
   height: 200px;
@@ -83,4 +84,36 @@ a:active { background: lavender;}
 @keyframes slideout {
   from { top: 0px }
   to { top: -240px }
+}
+
+.blog {
+  position: inherit;
+  z-index: 5px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+  background-color: lavender;
+  width: 439px;
+  height: 200px;
+  padding: 20px;
+}
+
+.show-blog {
+  top: -240px;
+  animation: 2s ease-in slideBlogin;
+}
+
+.hide-blog {
+  top: 240px;
+  animation: 2s ease-in slideBlogout;
+}
+
+
+@keyframes slideBlogin {
+  from { top: 240px }
+  to { top: -240px }
+}
+
+@keyframes slideBlogout {
+  from { top: -240px }
+  to { top: 240px }
 }
