@@ -1,6 +1,5 @@
 
 .react-wrapper {
-  z-index: 999;
   height: 280px;
   margin: 0 auto;
   position: relative;
@@ -17,7 +16,6 @@
 }
 
 .nav-bar {
-  z-index: 999;
   font: 24px 'Indie Flower', cursive;
   background-color: oldlace;
   width: 334px;
@@ -30,36 +28,44 @@
   border-left: 20px solid bisque;
   border-radius: 0px;
   text-align: center;
+  -moz-transition: all .3s ease-in-out;
+
 }
 
 a {
   text-decoration: none;
   color: black;
   padding: 10px 14px;
+  -moz-transition: all .5s ease-out;
 }
-
-a:visited {
-  text-decoration: none;
-}
-
+/*a:visited { text-decoration: none;}*/
 a:hover {
   background: lavender;
 }
 
+a:active { background: lavender;}
+
 .about-me {
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
   top: 0px;
   background-color: papayawhip;
   width: 334px;
   height: 260px;
   padding: 20px;
-  -moz-transition: bottom 600ms cubic-bezier(0.535, 0.050, 0.460, 0.980);
+  -moz-transition: all .3s ease-out;
+
 }
 
 .show-about {
   top: 0px;
+  display: block;
+  -moz-transition: all .5s ease-out;
+
 }
 
 .hide-about {
   display: none;
+  -moz-transition: all .5s ease-out;
+
 }
