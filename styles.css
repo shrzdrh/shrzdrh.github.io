@@ -49,12 +49,10 @@ a {
   padding: 10px 14px;
   transition: all .5s ease-out;
 }
-/*a:visited { text-decoration: none;}*/
-a:hover {
-  background: lavender;
-}
 
-a:active { background: lavender;}
+a:hover { background: lavender; }
+
+a:active { background: lavender; }
 
 .about-me {
   position: inherit;
@@ -96,6 +94,12 @@ a:active { background: lavender;}
   width: 439px;
   height: 200px;
   padding: 20px;
+  overflow-y: scroll;
+}
+
+.question {
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 16px;
 }
 
 .show-blog {
