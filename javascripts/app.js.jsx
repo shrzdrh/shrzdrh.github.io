@@ -16,6 +16,7 @@ window.App = React.createClass({
   render: () => {
 
     return(
+      <Menu onClick={this.handleClick} />
       <AboutMe show={this.state.ShowAboutMe} />
     );
 
