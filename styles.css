@@ -41,6 +41,26 @@ img {
   background-color: white;
 }
 
+#footer {
+  position: relative;
+  bottom: -75px;
+  right: -350px;
+  width: 679px;
+  background-color: papayawhip;
+  border-radius: 0px 0px 10px 10px;
+}
+
+#email {
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 24px;
+  color: purple;
+  background-color: plum;
+  display: inline-block;
+  width: 659px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
 .nav-bar {
   z-index: 999;
   position: relative;
@@ -73,7 +93,7 @@ a:hover { background: lavender; }
   font-size: 16px;
   background-color: papayawhip;
   width: 639px;
-  height: 400px;
+  height: 390px;
   padding: 20px;
   padding-bottom: 40px;
   padding-top: 0px;
@@ -106,7 +126,7 @@ a:hover { background: lavender; }
   font-size: 16px;
   background-color: papayawhip;
   width: 649px;
-  height: 400px;
+  height: 410px;
   padding: 15px;
   overflow-y: scroll;
 }
@@ -125,7 +145,7 @@ a:hover { background: lavender; }
 }
 
 .show-blog {
-  top: -450px;
+  top: -440px;
   animation: 700ms ease-in-out slideBlogin;
 }
 
@@ -137,7 +157,7 @@ a:hover { background: lavender; }
 
 @keyframes slideBlogin {
   from { top: 20px }
-  to { top: -450px }
+  to { top: -440px }
 }
 
 @keyframes slideBlogout {
