@@ -5,7 +5,10 @@ window.Blog = React.createClass({
       scroll_node.scrollTop = 0;
     }
     var componentStyles = "blog";
-    componentStyles += this.props.show ? " show-blog" : " hide-blog";
+
+    if (this.props.init) {
+      componentStyles += this.props.show ? " show-blog" : " hide-blog";
+    }
 
     return (
       <div className={componentStyles} ref="blog">

@@ -5,7 +5,11 @@ window.AboutMe = React.createClass({
       scroll_node.scrollTop = 0;
     }
     var styleClass = "about-me";
-    styleClass += this.props.show ? " show-about" : " hide-about";
+
+    if (this.props.init) {
+      styleClass += this.props.show ? " show-about" : " hide-about";
+    }
+    
     return (
       <div className={styleClass} ref="aboutme">
         Dating back to when I was a kid,
@@ -14,12 +18,12 @@ window.AboutMe = React.createClass({
         after observing the problems bioinformatists got to think about.  While
         writing my first programs, I realized I wanted to make a life out of
         architecting solutions and optimizations for society through software.<br/>
-        Here's what I've done professionally >> [resume].
+        Here's what I've done professionally >><a href="sheri-zada_resume.pdf">my resume</a>.
         <img src="./images/mt_tam.jpg" />
         <span className="question">What is my technology palette?</span><br />
-          As an undergrad, I coded data structures in Java. Then when learning
-          web development I wrote them in Ruby. I solve algorithm challenges
-          on LeetCode&HackerRank. The stack I have worked in is Ruby on Rails,
+          As an undergrad, I learned object oriented programming and coded data structures in
+          Java. I solve algorithm challenges on LeetCode&HackerRank.
+          The stack I have worked in is Ruby on Rails,
           PostgreSQL, React, jQuery, HTML5/CSS3. I know database design, how to use BCrypt
           for user auth, and am familiar with scalability concepts.
           I am aware of security hazards/solutions for XSS, CSRF, and

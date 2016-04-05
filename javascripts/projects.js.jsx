@@ -1,16 +1,19 @@
 window.Projects = React.createClass({
   render: function() {
     var componentStyles = "projects";
-    componentStyles += this.props.show ? " show-projects" : " hide-projects";
+
+    if (this.props.init) {
+      componentStyles += this.props.show ? " show-projects" : " hide-projects";
+    }
 
     return (
       <div className={componentStyles}>
         <div className="thumbnails">
           <span className="question">What have I pushed out into the Github ether?</span><br />
-          <a href="http://sherizada.com/ski-free"><img src="./images/skier.png" />Ski Free</a>
-          <a href="https://entente.io">Entente</a>
-          <a href="https://github.com/sherzader/AnORM"><span className="curly-brax">&#123;&#125;</span>AnORM</a>
-          <a href="https://instapixies.herokuapp.com">Instapixies</a>
+          <a href="#"><img src="./images/skier.png" />Ski Free</a>
+          <a href="#">Entente</a>
+          <a href="#"><span className="curly-brax">&#123;&#125;</span>AnORM</a>
+          <a href="#">Instapixies</a>
         </div><br />
         <span className="question">What am I currently working on?</span><br />
           Hello App World!
