@@ -1,3 +1,42 @@
+@media (max-width: 1000px) {
+  .react-wrapper {
+    margin-left: 10%;
+    animate: 1000ms ease-in marginz;
+  }
+  #name {
+    margin-left: 10%;
+    animate: 1000ms ease-in marginz;
+  }
+  #footer {
+    margin-left: 10%;
+    animate: 1000ms ease-in marginz;
+  }
+}
+
+@media (min-width: 867px) {
+  .react-wrapper {
+    margin-left: 15%;
+  }
+  #name {
+    margin-left: 15%;
+  }
+  #footer {
+    margin-left: 15%;
+  }
+}
+
+@media (min-width: 1002px) {
+  .react-wrapper {
+    margin-left: 28%;
+  }
+   #name {
+    margin-left: 28%;
+  }
+   #footer {
+    margin-left: 28%;
+  }
+}
+
 body {
   overflow: hidden;
 }
@@ -16,7 +55,6 @@ body {
 .react-wrapper {
   position: relative;
   top: 100px;
-  left: 350px;
   height: 550px;
   overflow: hidden;
 }
@@ -27,7 +65,6 @@ body {
   top:0;
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 30px;
-  left: 350px;
   padding: 30px;
   padding-top: 0px;
   width: 419px;
@@ -40,7 +77,6 @@ body {
   position: relative;
   display: inline-block;
   bottom: -75px;
-  right: -350px;
   width: 679px;
   background-color: papayawhip;
   border-radius: 0px 0px 10px 10px;
