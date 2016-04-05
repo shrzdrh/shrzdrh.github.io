@@ -9,13 +9,17 @@ window.Projects = React.createClass({
     return (
       <div className={componentStyles}>
         <div className="thumbnails">
-          <span className="question">What have I pushed out into the Github ether?</span><br />
-          <a href="#"><img src="./images/skier.png" />Ski Free</a>
-          <a href="#">Entente</a>
-          <a href="#"><span className="curly-brax">&#123;&#125;</span>AnORM</a>
-          <a href="#">Instapixies</a>
+          <span className="question">A selection of work I have pushed into the Github ether:</span><br />
+          <span className="curly-brax">&#123;&#125;</span>Ski Free a vanilla JS game based off of the Microsoft classic.
+          <a href="sherizada.com">[Live]</a><a href="github.com/sherzader/ski-free">[Code]</a><br />
+          <span className="curly-brax">&#123;&#125;</span>Entente is a web app that allows users to create, edit, and follow groups and search upcoming events using a calendar widget.
+          <a href="entente.io">[Live]</a><a href="github.com/sherzader/entente">[Code]</a><br />
+          <span className="curly-brax">&#123;&#125;</span>AnORM is a variation of Active Record, an object relational mapper.
+          <a href="github.com/sherzader/AnORM">[Code]</a><br />
+          <span className="curly-brax">&#123;&#125;</span>Instapixies is a web app that uses your hashtag search to fetch photos/videos from Instagram via the Instagram API.
+          <a href="instapixies.herokuapp.com">[Live]</a><a href="github.com/sherzader/instapixies">[Code]</a>
         </div><br />
-        <span className="question">What am I currently working on?</span><br />
+        <span className="question">What am I currently working on?</span>
           Hello App World!
           I am using my old Java skills to build an Android app. I want
           to use a remote API like I did with Instapixies to display user
