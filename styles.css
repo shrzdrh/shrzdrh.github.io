@@ -2,7 +2,7 @@ body {
   overflow: hidden;
 }
 
-img {
+.react-wrapper img {
   margin-left: 60px;
 }
 
@@ -19,11 +19,6 @@ img {
   left: 350px;
   height: 550px;
   overflow: hidden;
-}
-
-#follow {
-  position: relative;
-  right: -370px;
 }
 
 #name {
@@ -43,6 +38,7 @@ img {
 
 #footer {
   position: relative;
+  display: inline-block;
   bottom: -75px;
   right: -350px;
   width: 679px;
@@ -55,10 +51,26 @@ img {
   font-size: 24px;
   color: purple;
   background-color: plum;
-  display: inline-block;
+  display: inherit;;
   width: 659px;
   padding-left: 20px;
   border-radius: 10px;
+}
+
+#alt-media img {
+  margin-left: 10px;
+  margin-top: 8px;
+  height: 32px;
+  width: 32px;
+}
+
+#alt-media a {
+  padding: 11px 10px 0px 0px;
+  border-radius: 10px;
+}
+
+#alt-media a:hover {
+  background-color: lavender;
 }
 
 .nav-bar {
@@ -170,7 +182,7 @@ a:hover { background: lavender; }
   font-size: 16px;
   background-color: papayawhip;
   width: 649px;
-  height: 370px;
+  height: 400px;
   padding: 15px;
   position: inherit;
   top: -870px;
