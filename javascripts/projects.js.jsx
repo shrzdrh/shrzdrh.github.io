@@ -11,7 +11,7 @@ window.Projects = React.createClass({
         <div className="thumbnails">
           <span className="question">A selection of work I have pushed into the Github ether:</span><br />
           <span className="curly-brax">&#123;&#125;</span>Ski Free a vanilla JS game based off of the Microsoft classic.
-          <a href="http://sherizada.com/">[Live]</a><a href="https://github.com/sherzader/ski-free/">[Code]</a><br />
+          <a href="http://sherizada.com/ski-free/">[Live]</a><a href="https://github.com/sherzader/ski-free/">[Code]</a><br />
           <span className="curly-brax">&#123;&#125;</span>Entente is a web app that allows users to create, edit, and follow groups and search upcoming events using a calendar widget.
           <a href="http://entente.io/">[Live]</a><a href="https://github.com/sherzader/entente/">[Code]</a><br />
           <span className="curly-brax">&#123;&#125;</span>AnORM is a variation of Active Record, an object relational mapper.
