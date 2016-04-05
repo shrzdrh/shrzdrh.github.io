@@ -15,7 +15,13 @@ img {
   overflow: hidden;
 }
 
+#follow {
+  position: relative;
+  right: -370px;
+}
+
 #name {
+  display: inline-block;
   position: fixed !important;
   top:0;
   font-family: 'Shadows Into Light', sans-serif;
@@ -100,7 +106,10 @@ a:active { background: lavender; }
 }
 
 .question {
-  line-height: 40px;
+  display: inline-block;
+  line-height: 30px;
+  margin-bottom: 5px;
+  margin-right: 5px;
   padding: 5px;
   letter-spacing: 2px;
   font-family: 'Shadows Into Light', sans-serif;
@@ -164,4 +173,8 @@ a:active { background: lavender; }
 @keyframes slideProjectsout {
   from { left: 0px }
   to { left: -700px }
+}
+
+.thumbnails a {
+  padding: 10px;
 }

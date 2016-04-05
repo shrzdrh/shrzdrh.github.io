@@ -23,7 +23,7 @@ window.Blog = React.createClass({
             @keyframes are a beautiful animation tool to define endpoints for css elements.
             In order for your elements to move in this way, they need to have a relative display.
             I used @keyframes for animating position, but you can animate other properties like this too!
-            <br />Your designs are only limited by your imagination, seriously.<br /><br />
+            <br />Your designs are only limited by your imagination, seriously.<br />
           <span className="question">Most challenging bug with the simplest fix?</span><br />
             You have already seen it. Notice how this component scrolls to the top between tabs?
             I was bothered by the idea of creating a messy hack to force this to scroll up.
