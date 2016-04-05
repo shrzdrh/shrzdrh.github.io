@@ -7,11 +7,10 @@ img {
 }
 
 .react-wrapper {
-  margin: 0 auto;
   position: relative;
   top: 100px;
-  left: 150px;
-  height: 500px;
+  left: 350px;
+  height: 550px;
   overflow: hidden;
 }
 
@@ -26,7 +25,7 @@ img {
   top:0;
   font-family: 'Shadows Into Light', sans-serif;
   font-size: 30px;
-  left: 150px;
+  left: 350px;
   padding: 30px;
   padding-top: 0px;
   width: 419px;
@@ -43,9 +42,9 @@ img {
   width: 639px;
   height: 45px;
   padding-top: 10px;
-  border-top: 20px solid papayawhip;
+  border-top: 20px solid blanchedalmond;
   border-right: 20px solid bisque;
-  border-bottom: 20px solid papayawhip;
+  border-bottom: 20px solid blanchedalmond;
   border-left: 20px solid bisque;
   border-radius: 0px;
   text-align: center;
@@ -60,8 +59,6 @@ a {
 
 a:hover { background: lavender; }
 
-a:active { background: lavender; }
-
 .about-me {
   position: inherit;
   z-index: 5px;
@@ -71,16 +68,19 @@ a:active { background: lavender; }
   width: 639px;
   height: 400px;
   padding: 20px;
+  padding-bottom: 40px;
+  padding-top: 0px;
+  overflow-y: scroll;
 }
 
 .show-about {
   top: 0px;
-  animation: 2s ease-in slidein;
+  animation: 800ms ease-in slidein;
 }
 
 .hide-about {
   top: -440px;
-  animation: 2s ease-in slideout;
+  animation: 800ms ease-in slideout;
 }
 
 @keyframes slidein {
@@ -100,7 +100,7 @@ a:active { background: lavender; }
   font-size: 16px;
   background-color: papayawhip;
   width: 649px;
-  height: 370px;
+  height: 400px;
   padding: 15px;
   overflow-y: scroll;
 }
@@ -119,24 +119,24 @@ a:active { background: lavender; }
 }
 
 .show-blog {
-  top: -440px;
-  animation: 2s ease-in slideBlogin;
+  top: -450px;
+  animation: 700ms ease-in slideBlogin;
 }
 
 .hide-blog {
-  top: 0px;
-  animation: 2s ease-in slideBlogout;
+  top: 20px;
+  animation: 800ms ease-in slideBlogout;
 }
 
 
 @keyframes slideBlogin {
-  from { top: 0px }
-  to { top: -440px }
+  from { top: 20px }
+  to { top: -450px }
 }
 
 @keyframes slideBlogout {
-  from { top: -440px }
-  to { top: 0px }
+  from { top: -450px }
+  to { top: 20px }
 }
 
 .projects {
@@ -148,21 +148,17 @@ a:active { background: lavender; }
   height: 370px;
   padding: 15px;
   position: inherit;
-  top: -850px;
-}
-
-.thumbnails {
-  display: inline-block;
+  top: -880px;
 }
 
 .show-projects {
   left: 0px;
-  animation: 2s ease-in slideProjectsin;
+  animation: 800ms ease-in slideProjectsin;
 }
 
 .hide-projects {
   left: -700px;
-  animation: 2s ease-in slideProjectsout;
+  animation: 800ms ease-in slideProjectsout;
 }
 
 @keyframes slideProjectsin {
@@ -176,5 +172,23 @@ a:active { background: lavender; }
 }
 
 .thumbnails a {
-  padding: 10px;
+  display: inline-block;
+  padding: 0px;
+  width: 110px;
+  margin-left: 30px;
+}
+
+.thumbnails a:hover {
+  background-color: papayawhip;
+}
+
+.thumbnails img {
+  margin-left: 0px;
+}
+
+.curly-brax {
+  font-family: 'Shadows Into Light', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
 }

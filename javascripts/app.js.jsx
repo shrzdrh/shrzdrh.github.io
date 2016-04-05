@@ -1,6 +1,6 @@
 window.App = React.createClass({
   getInitialState: function() {
-    return ({ ShowAboutMe: false, ShowProjects: false, ShowEntente: false, ShowBlog: false });
+    return ({ ShowAboutMe: true, ShowProjects: false, ShowBlog: false });
   },
   handleClick: function(e) {
     var showComponent = e.target.getAttribute("value");
@@ -14,7 +14,6 @@ window.App = React.createClass({
     this.forceUpdate();
   },
   render: function()  {
-
     return(
       <div className="react-wrapper">
         <Navbar handleClick={this.handleClick} />
