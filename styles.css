@@ -65,7 +65,6 @@ a:active { background: lavender; }
   width: 639px;
   height: 400px;
   padding: 20px;
-  overflow-y: scroll;
 }
 
 .show-about {
@@ -129,4 +128,40 @@ a:active { background: lavender; }
 @keyframes slideBlogout {
   from { top: -440px }
   to { top: 0px }
+}
+
+.projects {
+  z-index: 5px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+  background-color: papayawhip;
+  width: 649px;
+  height: 370px;
+  padding: 15px;
+  position: inherit;
+  top: -850px;
+}
+
+.thumbnails {
+  display: inline-block;
+}
+
+.show-projects {
+  left: 0px;
+  animation: 2s ease-in slideProjectsin;
+}
+
+.hide-projects {
+  left: -700px;
+  animation: 2s ease-in slideProjectsout;
+}
+
+@keyframes slideProjectsin {
+  from { left: -700px }
+  to { left: 0px }
+}
+
+@keyframes slideProjectsout {
+  from { left: 0px }
+  to { left: -700px }
 }

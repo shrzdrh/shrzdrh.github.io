@@ -20,6 +20,7 @@ window.App = React.createClass({
         <Navbar handleClick={this.handleClick} />
         <AboutMe show={this.state.ShowAboutMe} handleClick={this.handleClick} />
         <Blog show={this.state.ShowBlog} handleClick={this.handleClick} />
+        <Projects show={this.state.ShowProjects} handleClick={this.handleClick} />
       </div>
     );
 

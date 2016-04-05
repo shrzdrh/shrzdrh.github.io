@@ -1,5 +1,4 @@
-window.AboutMe = React.createClass({
-  
+window.AboutMe = React.createClass({  
   render: function()  {
     var componentStyles = "about-me";
     componentStyles += this.props.show ? " show-about" : " hide-about";

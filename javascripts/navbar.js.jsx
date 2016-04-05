@@ -9,5 +9,4 @@ window.Navbar = React.createClass({
       </div>
     );
   }
-
 });

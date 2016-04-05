@@ -29,7 +29,7 @@ window.Blog = React.createClass({
             I was bothered by the idea of creating a messy hack to force this to scroll up.
             I know there is a simple fix in vanilla javascript, but I am using React here so I was adding
             the hack to the lifecycle method componentDidMount as advised in the React docs. Nothing was
-            changing and I saw the dom node being grabbed in the browser dev tools. I already knew I could
+            changing and I saw the DOM node being grabbed in the browser dev tools. I already knew I could
             count on my render() so I put the code in there and voila! Behold the simple fix:<br />
           <img src="./images/scrollTop.png" /><br />
           <span className="question">Do I think I will return to Biology?</span><br />
@@ -40,7 +40,7 @@ window.Blog = React.createClass({
             on a page. I love how I can build something and put it up on the interwebz so other people can
              see it. And all this is done as quick as I can make something up (and debug) and it is free!
             When I want to learn a new thing, I go on Stack Overflow or read issues on
-            Github or blogs and the sources of information and people willing to teach others is vast.
+            Github or blogs. The sources of information and people willing to teach others is vast.
             I love being part of such a helpful and passionate community. These are some of the reasons which
             will keep me in programming as a career and hobby.
         </div>
