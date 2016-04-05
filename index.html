@@ -16,23 +16,24 @@
     <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Shadows+Into+Light' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <span id="name">Sheri Zada</span>
-    <div id="main"></div>
-
+    <div id="app-content">
+      <span id="name">Sheri Zada</span>
+      <div id="main"></div>
+      <div id="footer">
+        <span id="email">
+          sheri.h.zada@gmail.com
+          <span id="alt-media">
+            <a href="https://github.com/sherzader/"><img id="octocat" title="My Github" src="./images/octocat.png" /></a>
+            <a href="https://twitter.com/shrzdr/"><img id="twitter" title="My Twitter" src="./images/twitter-128.png" /></a>
+          </span>
+        </span>
+    </div>
     <script type="text/babel">
       ReactDOM.render(
         <App />,
         document.getElementById('main')
       );
     </script>
-    <div id="footer">
-      <span id="email">
-        sheri.h.zada@gmail.com
-      <span id="alt-media">
-        <a href="https://github.com/sherzader/"><img id="octocat" title="My Github" src="./images/octocat.png" /></a>
-        <a href="https://twitter.com/shrzdr/"><img id="twitter" title="My Twitter" src="./images/twitter-128.png" /></a>
-      </span>
-      </span>
     </div>
   </body>
 </html>

@@ -1,44 +1,10 @@
-/*@media (max-width: 1000px) {
-  .react-wrapper {
-    margin-left: 10%;
-    animate: 1000ms ease-in marginz;
-  }
-  #name {
-    margin-left: 10%;
-    animate: 1000ms ease-in marginz;
-  }
-  #footer {
-    margin-left: 10%;
-    animate: 1000ms ease-in marginz;
-  }
-}
-
-@media (min-width: 867px) {
-  .react-wrapper {
-    margin-left: 15%;
-  }
-  #name {
-    margin-left: 15%;
-  }
-  #footer {
-    margin-left: 15%;
-  }
-}
-
-@media (min-width: 1002px) {
-  .react-wrapper {
-    margin-left: 28%;
-  }
-   #name {
-    margin-left: 28%;
-  }
-   #footer {
-    margin-left: 28%;
-  }
-}*/
-
 body {
   overflow: hidden;
+}
+
+#app-content {
+  margin: 0 auto;
+  width: 679px;
 }
 
 .react-wrapper img {
@@ -56,13 +22,14 @@ body {
   position: relative;
   top: 100px;
   height: 550px;
+  width: 679px;
   overflow: hidden;
-  margin-left: 15%;
+  margin-top: 110px;
+  background-color: pink;
+  margin: 0 auto;
 }
 
 #name {
-  margin-left: 15%;
-
   display: inline-block;
   position: fixed !important;
   top:0;
@@ -73,15 +40,12 @@ body {
   width: 419px;
   height: 150px;
   line-height: 190px;
-  background-color: white;
 }
 
 #footer {
-  margin-left: 15%;
-
-  position: relative;
+  margin-top: 75px;
+  position: absolute;
   display: inline-block;
-  bottom: -75px;
   width: 679px;
   background-color: papayawhip;
   border-radius: 0px 0px 10px 10px;
