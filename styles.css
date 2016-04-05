@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+/*@media (max-width: 1000px) {
   .react-wrapper {
     margin-left: 10%;
     animate: 1000ms ease-in marginz;
@@ -35,7 +35,7 @@
    #footer {
     margin-left: 28%;
   }
-}
+}*/
 
 body {
   overflow: hidden;
@@ -57,9 +57,12 @@ body {
   top: 100px;
   height: 550px;
   overflow: hidden;
+  margin-left: 15%;
 }
 
 #name {
+  margin-left: 15%;
+
   display: inline-block;
   position: fixed !important;
   top:0;
@@ -74,6 +77,8 @@ body {
 }
 
 #footer {
+  margin-left: 15%;
+
   position: relative;
   display: inline-block;
   bottom: -75px;
