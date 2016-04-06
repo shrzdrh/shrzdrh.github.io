@@ -19,14 +19,6 @@ window.Projects = React.createClass({
           <span className="curly-brax">&#123;&#125;</span>Instapixies is a web app that uses your hashtag search to fetch photos/videos from Instagram via the Instagram API.
           <a href="http://instapixies.herokuapp.com/">[Live]</a><a href="https://github.com/sherzader/instapixies/">[Code]</a>
         </div><br />
-        <span className="question">What am I currently working on?</span>
-          Hello App World!
-          I am using my old Java skills to build an Android app. I want
-          to use a remote API like I did with Instapixies to display user
-          requested data. So far the biggest hurdle has been the environment
-          set-up. Initially, I chose React Native but ran into a bug I unfortunately
-          could not find a solution for. I gave Android Studio a try and the
-          installation was a breeze. Onwards I go!
       </div>
     );
   }

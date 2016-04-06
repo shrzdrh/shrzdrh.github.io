@@ -60,6 +60,7 @@ body {
   width: 659px;
   padding-left: 20px;
   border-radius: 10px;
+  padding-bottom: 10px;
 }
 
 #alt-media img {
@@ -67,10 +68,12 @@ body {
   margin-top: 8px;
   height: 32px;
   width: 32px;
+  position: relative;
+  top: 7px;
 }
 
 #alt-media a {
-  padding: 11px 10px 0px 0px;
+  padding: 11px 10px 10px 0px;
   border-radius: 10px;
 }
 
