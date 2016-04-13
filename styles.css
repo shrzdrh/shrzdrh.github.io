@@ -226,15 +226,15 @@ a:hover { background: lavender; }
 .thumbnails img {
   margin-right: 10px;
   margin-top: 10px;
-  margin-left: 0px;
+  margin-left: 20px;
 }
 
 .thumbnails .anchorList a:nth-child(even) {
   margin-right: 40px;
 }
 
-.weirdos a:nth-child(3) {
-  margin-left: 40px;
+.thumbnails .anchorList a:nth-child(odd) {
+  margin-left: 20px;
 }
 
 .weirdos a:nth-child(4) {
