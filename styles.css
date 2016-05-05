@@ -218,9 +218,12 @@ a:hover { background: lavender; }
   to { left: -700px }
 }
 
-
 .thumbnails .anchorList a:hover {
-  background-color: plum;
+  background-color: aliceblue;
+}
+
+.thumbnails a {
+  text-decoration: underline;
 }
 
 .thumbnails img {
@@ -230,21 +233,20 @@ a:hover { background: lavender; }
 }
 
 .thumbnails .anchorList a:nth-child(even) {
-  margin-right: 40px;
+  margin-right: 50px;
+  color: peru;
 }
 
 .thumbnails .anchorList a:nth-child(odd) {
-  margin-left: 20px;
-}
-
-.weirdos a:nth-child(4) {
-  margin-left: 110px;
+  margin-left: 30px;
+  color: palevioletred;
 }
 
 .thumbnails .anchorList a {
   width: 110px;
   height: 42px;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .curly-brax {

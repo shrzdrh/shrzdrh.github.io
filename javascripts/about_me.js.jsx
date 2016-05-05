@@ -9,7 +9,7 @@ window.AboutMe = React.createClass({
     if (this.props.init) {
       styleClass += this.props.show ? " show-about" : " hide-about";
     }
-    
+
     return (
       <div className={styleClass} ref="aboutme">
         Dating back to when I was a kid,
@@ -18,7 +18,7 @@ window.AboutMe = React.createClass({
         after observing the problems bioinformatists got to think about.  While
         writing my first programs, I realized I wanted to make a life out of
         architecting solutions and optimizations for society through software.<br/>
-        Here's what I've done professionally >><a href="sheri-zada_resume.pdf">my resume</a>.
+        Here's what I've done professionally >><a href="sheri-zada_resume.pdf">my resume</a>
         <img src="./images/mt_tam.jpg" />
         <span className="question">What is my technology palette?</span><br />
           As an undergrad, I learned object oriented programming and coded data structures in
