@@ -16,7 +16,7 @@ window.Projects = React.createClass({
           <br />
           <div className="anchorList">
             <a href="http://entente.io/">Live</a><a href="https://github.com/sherzader/entente/">Code</a>
-            <a href="http://sherizada.com/ski-free/">Live</a><a href="https://github.com/sherzader/ski-free/">Code</a>
+            <a href="/ski-free">Live</a><a href="https://github.com/sherzader/ski-free/">Code</a>
             <a href="http://instapixies.herokuapp.com/">Live</a><a href="https://github.com/sherzader/instapixies/">Code</a>
           </div>
           <br />
