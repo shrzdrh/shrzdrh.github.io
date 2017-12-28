@@ -2,9 +2,15 @@ window.Navbar = React.createClass({
   render: function() {
     return (
       <div className="nav-bar" onClick={this.props.handleClick}>
-        <a href="#" value="ShowAboutMe">About Me</a>
-        <a href="#" value="ShowProjects">Projects</a>
-        <a href="#" value="ShowBlog">Blog-ish</a>
+        {
+          this.props.tabs.map((tab) => {
+            const tabKey = tab.replace(' ', '');
+            const className = this.props.tabSelected === tabKey ? 'selected': '';
+            return (
+              <a key={tab} href="#" value={`Show${tabKey}`} className={className}>{tab}</a>
+            )
+          })
+        }
       </div>
     );
   }
